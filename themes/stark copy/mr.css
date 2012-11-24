@@ -1,0 +1,168 @@
+/* LAYOUT */
+
+/* all */
+body {margin:0; padding:0;}
+#header-wrapper      {margin:0; width:100%;}
+#highlighted-wrapper {margin:0; width:100%;}
+#main-wrapper        {margin:0; width:100%;}
+#footer-wrapper      {margin:0; width:100%;}
+#header              {margin: 0px auto; max-width:960px;}
+#highlighted         {margin:20px auto;}
+#main                {margin:20px auto; max-width:960px;}
+#footer              {margin: 0px auto; max-width:960px;}
+
+#sidebar-first {width:225px; margin-right:20px;}
+
+/* one column */
+@media (max-width:959px) {
+  #header      {margin: 0px 20px;}
+  #highlighted {margin:20px 20px;}
+  #main        {margin:20px 20px;}
+  #footer      {margin: 0px 20px;}
+  
+  #header .section > div {float:none; margin:0 0 0 0;}
+
+  #sidebar-first {
+    width:225px;
+    margin:0 auto; 
+    left:0;
+    float:none;
+    display:block;
+  }
+  #content, body.sidebar-first #content {
+    width:100%;
+    left:0;
+    float:none;
+    display: block;
+  }
+
+}
+
+/* columns */
+@media (min-width:960px) {
+  #header .section > div {float:left; max-width:47%; margin-right:20px;}
+
+  .node-type-podcast #block-system-main {
+    width:225px;
+    float:left;
+    margin-right:20px;
+  }
+  .node-type-podcast #block-views-episodes-block {
+    width:715px;
+    float:left;
+  }
+
+
+
+}
+
+/* END LAYOUT */
+
+
+#highlighted h1 {
+  font-size:68px;
+  margin:0;
+  text-align: center;
+}
+
+/* HEADER */
+#page            {background:none;}
+#page-wrapper    {background:none;}
+#header          {background:none;}
+#header-wrapper  {background:none; } 
+#footer-wrapper  {background:black; color:white;}
+
+
+#header #name-and-slogan {padding:20px 20px; margin-top:0; margin-left:0; margin-bottom:0;}
+#header #name-and-slogan {background:#666;}
+
+#header #navigation a {color:#000; font-size:18px;}
+#header #navigation a:hover {color:#999;}
+
+#header,
+#header a,
+#header #name-and-slogan,
+#header #name-and-slogan #site-name,
+#header #name-and-slogan #site-name strong,
+#header #name-and-slogan #site-name strong a,
+#header #name-and-slogan #site-slogan {font-style: normal; text-transform: lowercase; color:#FFF; text-decoration: none; font-family: Arial, sans-serif;}
+
+#header #name-and-slogan,
+#header #site-name,
+#header #name-and-slogan a {font-size:18px; }
+
+/* MENU */
+/*#header #navigation {max-width:450px;}*/
+#header #navigation a {display:block; padding:15px 15px; float:left;  text-decoration: none; text-transform: lowercase;}
+#header #navigation h2 {display:none;}
+
+#highlighted {background:none; color:#666; border-bottom:none; font-size:36px;}
+#highlighted a { color:#000; }
+#highlighted div, #highlighted p {margin:0;}
+
+hr {border:none; border-bottom:solid thin #DDD; margin:10px 60px 10px 0px;}
+
+#footer a {color:white;}
+
+/* LAYOUT */
+body.sidebar-second #content {width:75%;}
+body.sidebar-second #sidebar-second {width:25%;}
+#header .section, .section {margin:0;}
+
+
+
+.sidebar #block-views-slideshow-block {margin:0 0 10px; padding:0; border:none;}
+
+
+body {background:#FFF;}
+.content {font-size:1.071em;}
+
+/* BLOCKS */
+#content .block-block {
+  border: 1px solid;
+  padding: 15px 20px;
+  margin: 0 0 20px;
+}
+#content .block-block h2 {
+  margin: 0 0 0.5em;
+  border-bottom: 1px solid #d6d6d6;
+  padding-bottom: 5px;
+  text-shadow: 0 1px 0 #fff;
+  line-height: 1.2;
+}
+#content .block-block .content {
+  line-height: 1.4;
+}
+
+#content .block-block {
+  background-color: #f6f6f2;
+  border-color: #f9f9f9;
+}
+
+
+.not-front #sidebar-second {margin-top:57px;}
+.not-front #content #block-block-9 {background:none; border:none; padding:0px;}
+
+.blockinset {background:#EEE; margin:20px 0px; padding:20px 20px 10px;}
+
+.view-podcasts tr {background:none;}
+.view-frontpage .views-row {margin-bottom:15px;}
+.view-frontpage .views-row .views-field-body {font-style: italic;}
+
+#highlighted {text-align: center; padding:0px; color:#000;}
+.page-taxonomy-term #page-title {display:none;}
+.front #page-title {display:none;}
+
+#sidebar-first .block {padding:0; background:none; background-color:none; border:none;}
+
+div.jp-audio {margin-bottom:20px;}
+div.jp-playlist {background-color:#FFF; border:none;}
+div.jp-interface {border:none; background:#FFF;}
+/* div.jp-playlist {display:none;} */
+
+
+#highlighted .view-context-section-header .views-field-field-namelong .field-content {margin-left:30px;}
+
+.region-content #block-views-podcasts-block-1 .views-row {width:230px; margin:0 70px 0 0; float:left;}
+.region-content #block-views-podcasts-block-1  {clear:both; /*float:left; width:60%;*/}
+.region-content #block-views-pages-block {clear:both; /*float:left; width:30%;*/}

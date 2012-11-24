@@ -1,0 +1,4 @@
+name = Audiotext
+description = Small changes.
+core = 7.x
+package = Custom MR

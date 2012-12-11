@@ -76,20 +76,24 @@ body {margin:0; padding:0;}
 #header #name-and-slogan {padding:20px 20px; margin-top:0; margin-left:0; margin-bottom:0;}
 #header #name-and-slogan {background:#666;}
 
-#header #navigation a {color:#000; font-size:18px;}
+#header #navigation a {color:#000; font-size:16px;}
 #header #navigation a:hover {color:#999;}
 
 #header,
 #header a,
 #header #name-and-slogan,
 #header #name-and-slogan #site-name,
-#header #name-and-slogan #site-name strong,
-#header #name-and-slogan #site-name strong a,
-#header #name-and-slogan #site-slogan {font-style: normal; text-transform: lowercase; color:#FFF; text-decoration: none; font-family: Arial, sans-serif;}
+#header #name-and-slogan #site-slogan {
+  font-style: normal; 
+  text-transform: lowercase; 
+  color:#FFF; 
+  text-decoration: none; 
+  font-family: Arial, sans-serif;
+}
 
 #header #name-and-slogan,
 #header #site-name,
-#header #name-and-slogan a {font-size:18px; }
+#header #name-and-slogan a {font-size:16px; }
 
 /* MENU */
 /*#header #navigation {max-width:450px;}*/
@@ -163,6 +167,14 @@ div.jp-interface {border:none; background:#FFF;}
 
 #highlighted .view-context-section-header .views-field-field-namelong .field-content {margin-left:30px;}
 
-.region-content #block-views-podcasts-block-1 .views-row {width:230px; margin:0 70px 0 0; float:left;}
-.region-content #block-views-podcasts-block-1  {clear:both; /*float:left; width:60%;*/}
-.region-content #block-views-pages-block {clear:both; /*float:left; width:30%;*/}
+#block-views-podcasts-block-1 .views-row,
+#block-views-pages-block .views-row {
+  width:230px; 
+  margin:0 70px 0 0; 
+  float:left;
+}
+#block-views-podcasts-block-1,
+#block-views-pages-block  {
+  clear:both;
+  display:table;
+}

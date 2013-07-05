@@ -29,7 +29,9 @@ function audiotext_field_formatter_view($entity_type, $entity, $field, $instance
         $element[$delta] = array(
           '#markup' => '<audio controls="controls">'
           . '<source src="' . $item['value'] . '" type="audio/mpeg">'
-          . 'Your browser does not support HTML5 audio.</audio> <br />'
+          . '<source src="' . $item['value'] . '" type="audio/mp3">'
+          . 'Your browser does not support HTML5 audio.'
+          . '</audio> <br />'
           . '<a href="' . $item['value'] . '">(download)</a>'
         );
       }
